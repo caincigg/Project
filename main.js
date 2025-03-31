@@ -9,6 +9,12 @@ const button = document.createElement("button");
 button.textContent = "Click me";
 document.body.appendChild(button);
 
+// Create a paragraph to update the text
+const message = document.createElement("p");
+document.body.appendChild(message);
+
 button.addEventListener("click", () => {
-    document.body.innerHTML += "<p>You clicked the button!</p>";
+    message.textContent = "You clicked the button!";
 });
+
+
